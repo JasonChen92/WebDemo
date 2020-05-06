@@ -22,6 +22,12 @@ public class WebDemoApplication {
 		return "Hello World again!";
 	}
 
+	@GetMapping("/helloTest")
+	@ResponseBody
+	public String getString2(){
+		return "test, test. Hello World again!";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(WebDemoApplication.class, args);
 	}
